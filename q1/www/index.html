@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <link rel="icon" href="img/favicon-16x16.png" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/7879f9b0a1.js" crossorigin="anonymous"></script>
+  <script src="js/app.js" async></script>
+  <title>Fakestagram</title>
+</head>
+
+<body>
+  <div class="container">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src='img/avatar.jpg' class="profileimg" alt="doggy"></a>
+    <div class="profileHeader">
+      dogsofinstagram
+    </div>
+    <div class="profileDesc">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>cididunt ut labore et dolore magna aliqua.
+    </div>
+    <div class="posts">
+      <a href="#bird.jpg" onclick="on(1)"><img src='img/bird.jpg' class="img" alt="bird"></a>
+      <a href="#blue.jpg" onclick="on(2)"><img src='img/blue.jpg' class="img" alt="blue"></a>
+      <a href="#boat.jpg" onclick="on(3)"><img src='img/boat.jpg' class="img" alt="boat"></a>
+      <a href="#falls.jpg" onclick="on(4)"><img src='img/falls.jpg' class="img" alt="falls"></a>
+      <a href="#flower.jpg" onclick="on(5)"><img src='img/flower.jpg' class="img" alt="flower"></a>
+      <a href="#forest.jpg" onclick="on(6)"><img src='img/forest.jpg' class="img" alt="forest"></a>
+      <a href="#jungle.jpg" onclick="on(7)"><img src='img/jungle.jpg' class="img" alt="jungle"></a>
+      <a href="#koi.jpg" onclick="on(8)"><img src='img/koi.jpg' class="img" alt="koi"></a>
+      <a href="#lake.jpg" onclick="on(9)"><img src='img/lake.jpg' class="img" alt="lake"></a>
+      <a href="#ocean.jpg" onclick="on(10)"><img src='img/ocean.jpg' class="img" alt="ocean"></a>
+      <a href="#path.jpg" onclick="on(11)"><img src='img/path.jpg' class="img" alt="path"></a>
+      <a href="#plants.jpg" onclick="on(12)"><img src='img/plants.jpg' class="img" alt="plants"></a>
+      <a href="#red.jpg" onclick="on(13)"><img src='img/red.jpg' class="img" alt="red"></a>
+      <a href="#trees.jpg" onclick="on(14)"><img src='img/trees.jpg' class="img" alt="trees"></a>
+      <a href="#waves.jpg" onclick="on(15)"><img src='img/waves.jpg' class="img" alt="waves"></a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay" onclick="off()">
+    <div class="overlayContainer" id="overlayContainer">
+      <div class="overlayImageContainer" id="overlayImageContainer">
+        <img id="currentImage" src="img/temp.jpg" alt="image" class="currentImage">
+      </div>
+      <div class="overlayPoster">
+        <div class="overlayProfileImgContainer">
+          <img class="overlayProfileImg" src="img/monke.jpg" alt="monkey">
+        </div>
+        <b>le_monke</b><br>
+        Florida, USA
+        <hr />
+      </div>
+      <div class="overlayImageContainerMobile">
+        <img id="currentImageMobile" src="img/temp.jpg" alt="image" class="currentImage">
+      </div>
+      <div class="overlayComment">
+        <div class="overlayProfileImgContainer">
+          <img class="overlayProfileImg" src="img/eddie.jpg" alt="monkey">
+        </div>
+        <b>Eddie Murphy</b>
+        wow. incredible. Lorem ipsum dolor sit amet, consectetur adipisicing. <br><br>
+        <small>9m Reply </small>
+      </div>
+      <div class="overlayComment">
+        <div class="overlayProfileImgContainer">
+          <img class="overlayProfileImg" src="img/yoda.jpg" alt="monkey">
+        </div>
+        <b>Baby Yoda</b>
+        soooooo cool. <br><br><br>
+        <small>8m Reply</small>
+      </div>
+      <div class="overlayComment">
+        <div class="overlayProfileImgContainer">
+          <img class="overlayProfileImg" src="img/sengi.jpg" alt="monkey">
+        </div>
+        <b>Sengi</b>
+        thank you monkey. <br><br><br>
+        <small>5m Reply</small>
+      </div>
+      <div class="overlayComment">
+        <div class="overlayProfileImgContainer">
+          <img class="overlayProfileImg" src="img/skellington.png" alt="monkey">
+        </div>
+        <b>mr. skellington</b>
+        beautiful. <br><br><br>
+        <small>2m Reply</small>
+      </div>
+      <div class="overlayButtonsContainer">
+        <br><br>
+        <hr>
+        <i class="far fa-heart fa-2x"></i>
+        <i class="far fa-comment fa-2x"></i>
+        <i class="fas fa-retweet fa-2x"></i>
+        <div class="overlaySaveContainer">
+          <i class="far fa-bookmark fa-2x"></i>
+        </div>
+        <br><b>64869847 likes</b> <br>
+        <small>13 Minutes Ago</small>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

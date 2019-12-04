@@ -1,0 +1,308 @@
+html {
+  font-family: Verdana, Arial;
+}
+
+hr {
+  display: block;
+  height: 12px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+small {
+  color: grey;
+}
+
+.overlaySaveContainer {
+  float: right;
+  display: block;
+  margin-right: 10px;
+}
+
+.scrollStop {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 935px;
+  margin: auto;
+  height: inherit;
+}
+
+.profileHeader {
+  float: left;
+  font-size: 28px;
+  width: 755px;
+  height: 65px;
+  margin-left: 30px;
+}
+
+.profileDesc {
+  float: left;
+  font-size: 14px;
+  width: 755px;
+  height: 95px;
+  margin-left: 30px;
+}
+
+.img {
+  width: 293px;
+  height: 293px;
+  margin-left: 5px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.posts {
+  flex-wrap: wrap;
+}
+
+.profileimg {
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.overlayProfileImgContainer {
+  float: left;
+  height: 100px;
+  width: 45px;
+}
+
+.overlayProfileImg {
+  display: block;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlayContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 935px;
+  height: 600px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.overlayImageContainer {
+  float: left;
+  width: 600px;
+  height: 600px;
+}
+
+.overlayImageContainerMobile {
+  display: none;
+}
+
+.overlayPoster {
+  float: right;
+  width: 335px;
+  height: 50px;
+}
+
+.overlayComment {
+  float: right;
+  width: 335px;
+  height: 100px;
+}
+
+.overlayButtonsContainer {
+  float: right;
+  width: 335px;
+  height: 150px;
+  padding-top: 10px;
+}
+
+.currentImage {
+  width: 600px;
+  height: 600px;
+}
+
+.overlayButtons {
+  height: 25px;
+  width: 25px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+  hr {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    height: inherit;
+  }
+
+  .img {
+    display: block;
+    width: 293px;
+    height: 293px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .profileHeader {
+    float: none;
+    font-size: 28px;
+    width: 80%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .profileDesc {
+    display: none;
+  }
+
+  .profileimg {
+    float: none;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+  }
+
+  .overlayProfileImgContainer {
+    float: left;
+    height: 100px;
+    width: 45px;
+  }
+
+  .overlayProfileImg {
+    display: block;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+
+  .overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .overlayContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    margin: auto;
+  }
+
+  .overlayImageContainer {
+    display: none;
+  }
+
+  .overlayImageContainerMobile {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .overlayPoster {
+    display: block;
+    width: 75%;
+    height: 12%;
+    margin: auto;
+  }
+
+  .overlayComment {
+    display: none;
+  }
+
+  .overlayButtonsContainer {
+    display: block;
+    width: 67%;
+    height: 20%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  .currentImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .overlayButtons {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .container {
+    width: 642px;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+  }
+
+  .profileHeader {
+    float: left;
+    font-size: 28px;
+    width: 462px;
+    height: 65px;
+    margin-left: 30px;
+  }
+
+  .profileDesc {
+    float: left;
+    font-size: 14px;
+    width: 430px;
+    height: 95px;
+    margin-left: 30px;
+  }
+
+  .img {
+    margin-bottom: 10px;
+  }
+}
